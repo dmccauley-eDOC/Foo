@@ -80,7 +80,7 @@ body:
       label: Estimated work hours
       description: How long will it take to fix this bug?
       placeholder: 8 hours
-      validations:
+      validation:
         required: true
 
   - type: dropdown
