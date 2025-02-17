@@ -37,7 +37,6 @@ body:
       description: Select the priority level
       multiple: false
       options:
-        - Null
         - Low
         - Medium
         - High
@@ -82,8 +81,7 @@ body:
       description: How significant is this issue for security?
       multiple: false
       options:
-        - 'Yes'
-        - 'No'
+        - "Yes"
         - Potential
         - TBD
 
@@ -93,7 +91,6 @@ body:
       label: Does this require documentation?
       multiple: false
       options:
-        - 'No'
         - All
         - Admin Guide
         - API Guide
