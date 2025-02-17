@@ -37,7 +37,7 @@ body:
       description: Select the priority level
       multiple: false
       options:
-        - None
+        - Null
         - Low
         - Medium
         - High
@@ -45,7 +45,7 @@ body:
   - type: checkboxes
     id: fasb
     attributes:
-      label: FASB Compliance
+      label: FASB
       description: Is this a FASB task?
       options:
         - label: FASB?
@@ -82,8 +82,8 @@ body:
       description: How significant is this issue for security?
       multiple: false
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
         - Potential
         - TBD
 
@@ -93,7 +93,7 @@ body:
       label: Does this require documentation?
       multiple: false
       options:
-        - No
+        - 'No'
         - All
         - Admin Guide
         - API Guide
