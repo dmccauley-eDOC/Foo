@@ -57,8 +57,8 @@ body:
       description: Is this a billable or non-billable task?
       multiple: false
       options:
-        - Billable
         - Non-billable
+        - Billable
 
   - type: input
     id: ui-change-page
@@ -66,8 +66,6 @@ body:
       label: UI Change Page/Screen
       description: Specify the affected UI page or screen
       placeholder: e.g., Dashboard, Settings Page
-    validations:
-      required: false
 
   - type: input
     id: security-review-by
@@ -75,6 +73,15 @@ body:
       label: Security Review By
       description: Who will conduct the security review?
       placeholder: Enter name or team
+
+  - type: input
+    id: estimated-work-hours
+    attributes:
+      label: Estimated work hours
+      description: How long will it take to fix this bug?
+      placeholder: 8 hours
+      validations:
+        required: true
 
   - type: dropdown
     id: security-significant
