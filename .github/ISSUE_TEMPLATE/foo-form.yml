@@ -6,10 +6,23 @@ projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
 body:
-  - type: markdown
+  - type: textarea
+    id: what-happened
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+      label: Description
+      description: What is this bug about?
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: definition-done
+    attributes:
+      label: Definition of Done
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
   - type: input
     id: contact
     attributes:
@@ -18,26 +31,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
+
   - type: dropdown
     id: browsers
     attributes:
