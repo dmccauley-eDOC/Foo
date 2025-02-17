@@ -37,7 +37,7 @@ body:
       description: Select the priority level
       multiple: false
       options:
-        - 'N/A'
+        - None
         - Low
         - Medium
         - High
@@ -46,9 +46,9 @@ body:
     id: fasb
     attributes:
       label: FASB Compliance
-      description: Is this related to FASB compliance?
+      description: Is this a FASB task?
       options:
-        - label: This issue involves FASB compliance
+        - label: FASB?
           required: false
 
   - type: dropdown
@@ -82,8 +82,8 @@ body:
       description: How significant is this issue for security?
       multiple: false
       options:
-        - 'Yes'
-        - 'No'
+        - Yes
+        - No
         - Potential
         - TBD
 
@@ -93,7 +93,7 @@ body:
       label: Does this require documentation?
       multiple: false
       options:
-        - 'No'
+        - No
         - All
         - Admin Guide
         - API Guide
