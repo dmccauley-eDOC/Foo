@@ -39,5 +39,5 @@ body:
       label: Non-QC Task
       description: Is this a QC-related task?
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - label: This is a QC-related task
+          required: false
