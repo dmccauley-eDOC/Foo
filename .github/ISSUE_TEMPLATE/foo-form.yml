@@ -7,7 +7,7 @@ assignees:
   - octocat
 body:
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
       label: Description
       description: What is this bug about?
@@ -20,18 +20,19 @@ body:
       label: Definition of Done
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
-  - type: input
-    id: contact
+  - type: dropdown
+    id: documentation-required
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-
+      label: Does this require documentation?
+      multiple: false
+      options:
+        - No
+        - All
+        - Admin Guide
+        - API Guide
+        - User Guide
   - type: dropdown
     id: browsers
     attributes:
