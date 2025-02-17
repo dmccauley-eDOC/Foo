@@ -37,7 +37,7 @@ body:
       description: Select the priority level
       multiple: false
       options:
-        - 'None'
+        - 'N/A'
         - Low
         - Medium
         - High
