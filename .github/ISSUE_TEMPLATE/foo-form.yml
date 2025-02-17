@@ -1,10 +1,16 @@
 name: Bug Foo
+
 description: Something broke? Fix it now!
+
 title: "[Bug]: "
+
 labels: ["bug"]
+
 projects: ["octo-org/1", "octo-org/44"]
+
 assignees:
   - octocat
+
 body:
   - type: textarea
     id: description
@@ -14,6 +20,7 @@ body:
       placeholder: What happened?
     validations:
       required: true
+
   - type: textarea
     id: definition-done
     attributes:
@@ -22,6 +29,64 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Select the priority level
+      multiple: false
+      options:
+        - None
+        - Low
+        - Medium
+        - High
+
+  - type: checkboxes
+    id: fasb
+    attributes:
+      label: FASB Compliance
+      description: Is this related to FASB compliance?
+      options:
+        - label: This issue involves FASB compliance
+          required: false
+
+  - type: dropdown
+    id: billing-type
+    attributes:
+      label: Billing Type
+      description: Is this a billable or non-billable task?
+      multiple: false
+      options:
+        - Billable
+        - Non-billable
+
+  - type: input
+    id: ui-change-page
+    attributes:
+      label: UI Change Page/Screen
+      description: Specify the affected UI page or screen
+      placeholder: e.g., Dashboard, Settings Page
+
+  - type: input
+    id: security-review-by
+    attributes:
+      label: Security Review By
+      description: Who will conduct the security review?
+      placeholder: Enter name or team
+
+  - type: dropdown
+    id: security-significant
+    attributes:
+      label: Security Significance
+      description: How significant is this issue for security?
+      multiple: false
+      options:
+        - Yes
+        - No
+        - Potential
+        - TBD
+
   - type: dropdown
     id: documentation-required
     attributes:
@@ -33,6 +98,7 @@ body:
         - Admin Guide
         - API Guide
         - User Guide
+
   - type: checkboxes
     id: terms
     attributes:
