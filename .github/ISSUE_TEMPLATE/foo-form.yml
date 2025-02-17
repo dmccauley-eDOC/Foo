@@ -66,6 +66,8 @@ body:
       label: UI Change Page/Screen
       description: Specify the affected UI page or screen
       placeholder: e.g., Dashboard, Settings Page
+    validations:
+      required: false
 
   - type: input
     id: security-review-by
