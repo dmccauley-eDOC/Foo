@@ -111,5 +111,5 @@ body:
       label: Non-QC Task
       description: Is this a QC-related task?
       options:
-        - label: This is a QC-related task
+        - label: This not a QC-related task
           required: false
