@@ -105,11 +105,10 @@ body:
         - API Guide
         - User Guide
 
-  - type: checkboxes
-    id: terms
+  - type: dropdown
+    id: qc-task
     attributes:
-      label: Non-QC Task
-      description: Is this a QC-related task?
+      label: Is this a QC-related task?
+      multiple: false
       options:
-        - label: This not a QC-related task
-          required: false
+        - Yes
