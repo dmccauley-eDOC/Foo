@@ -41,14 +41,13 @@ body:
         - Medium
         - High
 
-  - type: checkboxes
+  - type: dropdown
     id: fasb
     attributes:
-      label: FASB
-      description: Is this a FASB task?
+      label: Is this a FASB fix?
+      multiple: false
       options:
-        - label: FASB?
-          required: false
+        - "Yes"
 
   - type: dropdown
     id: billing-type
@@ -108,7 +107,7 @@ body:
   - type: dropdown
     id: qc-task
     attributes:
-      label: Is this a QC-related task?
+      label: Is this a non-QC task?
       multiple: false
       options:
         - "Yes"
